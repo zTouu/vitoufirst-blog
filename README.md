@@ -13,19 +13,8 @@ Before you begin, ensure you have met the following requirements:
 
 To install **FirstBlog**, follow these steps:
 
-Linux and macOS:
-
-```
-sudo git clone https://github.com/zTouu/vitoufirst-blog
-```
-
-Windows:
-
-```
 git clone https://github.com/zTouu/vitoufirst-blog
-```
 
 ## License
 
 This project is free to use and does not contains any license.
-
