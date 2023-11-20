@@ -13,6 +13,8 @@ Before you begin, ensure you have met the following requirements:
 
 To install **FirstBlog**, follow these steps:
 
+--> git clone repository_url
+
 git clone https://github.com/zTouu/vitoufirst-blog
 
 ## License
