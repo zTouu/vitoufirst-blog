@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My MongoDB Article</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="./assets/images/logo-light.svg" alt="Devblog's logo" width="150" height="40" class="logo-light">
+          <img src="./assets/images/logo-dark.svg" alt="Devblog's logo" width="150" height="40" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">About Me</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title">Topics</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Accessibility</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Performance</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  <!-- This is css -->
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e0f7fa; /* Light green background */
+    }
+    article {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #f6f3f3; /* White background for the article */
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+    }
+
+    h1, h2, h3 {
+        font-family: 'Open Sans', sans-serif;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>MongoDB Article</h1>
+</header>
+
+<article>
+    
+    <img src="assets/images/blog-1.png" alt="MongoDB Logo" width="550">
+
+    <h2>Introduction to MongoDB</h2>
+    <img src="assets/images/intro.png" alt="MongoDB logo" width="500">
+    <p>
+        MongoDB is a popular open-source NoSQL database that provides high performance, high availability, and easy scalability. Unlike traditional relational databases, MongoDB stores data in a flexible, JSON-like format called BSON. This allows for a dynamic and schema-less data model, making it well-suited for modern, agile development.
+
+MongoDB adopts a document-oriented approach, storing data in BSON (Binary JSON) format. BSON is a binary representation of JSON-like documents, enabling a rich and nested data structure. Each document in MongoDB is a collection of key-value pairs, akin to a JSON object, and can be further nested or extended without adhering to a fixed schema.
+</p>
+
+    <!-- More content about MongoDB can be added here -->
+
+    <h2>Getting Started with MongoDB</h2>
+
+    <img src="assets/images/getstart.jpeg" alt="MongoDB logo" width="500">
+    <p>
+        To get started with MongoDB, you'll need to download and install the MongoDB server. You can then interact with MongoDB using the MongoDB Shell or various programming language drivers. 
+
+
+<p> <strong>1. Installation:</strong> 
+
+Visit the official MongoDB website (https://www.mongodb.com/try/download/community) to download the appropriate version for your operating system.
+Follow the installation instructions provided for your platform.</p> 
+
+
+<p><strong>2. Starting MongoDB:</strong> Once installed, start the MongoDB server. For most installations, this involves running a command like mongod in your terminal or command prompt.</p>
+<strong>3. Connect to MongoDB:</strong>
+
+Open a new terminal or command prompt window and run the mongo shell command. This connects you to the MongoDB server.
+
+
+<p> <strong>4. Create a Database:</strong>In the mongo shell, you can create a new database using the use command. For example: use mydatabase. If the database doesn't exist, MongoDB will create it.</p>
+<strong>5. Create Collections:</strong>
+
+Collections are akin to tables in relational databases. You can create a collection within your database using the db.createCollection() command. For example: db.createCollection('mycollection').
+    </p>
+
+    <!-- More details about getting started can be added here -->
+
+    <h2>MongoDB and Node.js</h2>
+    <img src="assets/images/mongo-nodejs.png" alt="MongoDB Logo" width="550">
+    <p>
+        MongoDB is commonly used in modern web applications, big data, real-time applications, and other scenarios where flexibility, scalability, and performance are crucial. Its flexibility and ease of use make it a popular choice for developers working with diverse and rapidly changing data structures.
+        
+        If you're working with JavaScript, especially in a Node.js environment, you can use the official MongoDB Node.js driver to interact with MongoDB. This allows you to seamlessly integrate MongoDB into your Node.js applications.
+    </p>
+
+    <!-- Information about MongoDB and Node.js integration can be added here -->
+
+    <h2>Conclusion</h2>
+    <img src="assets/images/conclu.jpeg" alt="MongoDB Logo" width="550">
+    <p>
+        MongoDB is a powerful and flexible database solution that has gained widespread adoption in the developer community. Whether you're building a small application or a large-scale system, MongoDB's document-oriented approach and scalability make it a valuable choice for various use cases. 
+
+        As technology continues to advance, MongoDB remains at the forefront of the NoSQL database landscape, evolving to meet the demands of modern applications. Its commitment to innovation, adaptability, and community-driven development positions MongoDB as a leading choice for developers navigating the complexities of contemporary data management. Whether tackling large-scale projects or nimble, dynamic endeavors, MongoDB continues to prove its value as a powerful and flexible database solution.
+    </p>
+</article>
+
+  </header>
+
+  
+  
+    <footer>
+
+        <div class="container">
+    
+          <div class="wrapper">
+    
+            <a href="#" class="footer-logo">
+              <img src="./assets/images/logo-light.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-light">
+              <img src="./assets/images/logo-dark.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-dark">
+            </a>
+    
+            <p class="footer-text">
+              Learn about Web accessibility, Web performance, and Database management.
+            </p>
+    
+          </div>
+    
+          <div class="wrapper">
+    
+            <p class="footer-title">Quick Links</p>
+    
+            <ul>
+    
+              <li>
+                <a href="#" class="footer-link">Advertise with us</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">About Us</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Contact Us</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+    
+          <div class="wrapper">
+    
+            <p class="footer-title">Legal Stuff</p>
+    
+            <ul>
+    
+              <li>
+                <a href="#" class="footer-link">Privacy Notice</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Cookie Policy</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Terms Of Use</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+    
+        </div>
+    
+        <p class="copyright">
+          &copy; Copyright 2023 <a href="#">ninvitou</a>
+        </p>
+    
+      </footer>
+
+      <script src="./assets/js/script.min.js"></script>
+
+      <!--
+        - ionicon link
+      -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
