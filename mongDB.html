@@ -5,26 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My MongoDB Article</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!--
+  <!--
     - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+   -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
 
   <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body class="light-theme">
-
   <!--
     - #HEADER
   -->
@@ -38,7 +37,7 @@
         <a href="#">
           <img src="./assets/images/logo-light.svg" alt="Devblog's logo" width="150" height="40" class="logo-light">
           <img src="./assets/images/logo-dark.svg" alt="Devblog's logo" width="150" height="40" class="logo-dark">
-        </a>
+       </a>
 
         <div class="btn-group">
 
@@ -129,22 +128,22 @@
       </nav>
 
     </div>
-
   <!-- This is css -->
   <style>
+
     body {
         font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #e0f7fa; /* Light green background */
+        background-color: #e0f7fa;
     }
     article {
         max-width: 800px;
         margin: 0 auto;
-        background-color: #f6f3f3; /* White background for the article */
+        background-color: transparent; 
         padding: 15px;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     }
     img {
         max-width: 100%;
@@ -154,22 +153,25 @@
         margin-bottom: 20px;
     }
 
-    @font-face {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
-    }
-
     h1, h2, h3 {
         font-family: 'Open Sans', sans-serif;
     }
-    h1{
+    h1 {
         text-align: center;
     }
+    h1, h2{
+      color: var(--foreground-primary);
+    }
+    p{
+      color: var(--foreground-primary);
+    }
+    strong{
+      color: var(--foreground-primary);
+    }
 </style>
+
+
 </head>
-<body>
 <header>
     <h1>MongoDB Article</h1>
 </header>
@@ -192,8 +194,7 @@ MongoDB adopts a document-oriented approach, storing data in BSON (Binary JSON) 
 
     <img src="assets/images/getstart.jpeg" alt="MongoDB logo" width="500">
     <p>
-        To get started with MongoDB, you'll need to download and install the MongoDB server. You can then interact with MongoDB using the MongoDB Shell or various programming language drivers. 
-
+        To get started with MongoDB, you'll need to download and install the MongoDB server. You can then interact with MongoDB using the MongoDB Shell or various programming language drivers.</p>
 
 <p> <strong>1. Installation:</strong> 
 
@@ -204,14 +205,13 @@ Follow the installation instructions provided for your platform.</p>
 <p><strong>2. Starting MongoDB:</strong> Once installed, start the MongoDB server. For most installations, this involves running a command like mongod in your terminal or command prompt.</p>
 <strong>3. Connect to MongoDB:</strong>
 
-Open a new terminal or command prompt window and run the mongo shell command. This connects you to the MongoDB server.
+<p>Open a new terminal or command prompt window and run the mongo shell command. This connects you to the MongoDB server.</p>
 
 
 <p> <strong>4. Create a Database:</strong>In the mongo shell, you can create a new database using the use command. For example: use mydatabase. If the database doesn't exist, MongoDB will create it.</p>
 <strong>5. Create Collections:</strong>
 
-Collections are akin to tables in relational databases. You can create a collection within your database using the db.createCollection() command. For example: db.createCollection('mycollection').
-    </p>
+<p>Collections are akin to tables in relational databases. You can create a collection within your database using the db.createCollection() command. For example: db.createCollection('mycollection').</p>
 
     <!-- More details about getting started can be added here -->
 
@@ -235,9 +235,6 @@ Collections are akin to tables in relational databases. You can create a collect
 </article>
 
   </header>
-
-  
-  
     <footer>
 
         <div class="container">
@@ -305,14 +302,14 @@ Collections are akin to tables in relational databases. You can create a collect
           &copy; Copyright 2023 <a href="#">ninvitou</a>
         </p>
     
-      </footer>
+    </footer>
 
       <script src="./assets/js/script.min.js"></script>
-
       <!--
         - ionicon link
       -->
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
