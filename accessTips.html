@@ -1,297 +1,419 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My MongoDB Article</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="/stylee.css">
-  <!--
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/stylee.css" />
+    <!--
     - favicon
    -->
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
 
-  <!--
+    <!--
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="light-theme">
-  <!--
+  <body class="light-theme">
+    <!--
     - #HEADER
   -->
 
-  <header>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html">
+            <img
+              src="./assets/images/logo-light.svg"
+              alt="Devblog's logo"
+              width="150"
+              height="40"
+              class="logo-light"
+            />
+            <img
+              src="./assets/images/logo-dark.svg"
+              alt="Devblog's logo"
+              width="150"
+              height="40"
+              class="logo-dark"
+            />
+          </a>
 
-    <div class="container">
+          <div class="btn-group">
+            <button class="theme-btn theme-btn-mobile light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
 
-      <nav class="navbar">
+            <button class="nav-menu-btn">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
 
-        <a href="index.html">
-          <img src="./assets/images/logo-light.svg" alt="Devblog's logo" width="150" height="40" class="logo-light">
-          <img src="./assets/images/logo-dark.svg" alt="Devblog's logo" width="150" height="40" class="logo-dark">
-       </a>
-
-        <div class="btn-group">
-
-          <button class="theme-btn theme-btn-mobile light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-
-          <button class="nav-menu-btn">
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
-        </div>
-
-        <div class="flex-wrapper">
-
-          <ul class="desktop-nav">
-
-            <li>
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-
-            <li>
-              <a href="#" class="nav-link">About Me</a>
-            </li>
-
-            <li>
-              <a href="#" class="nav-link">Contact</a>
-            </li>
-
-          </ul>
-
-          <button class="theme-btn theme-btn-desktop light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-
-        </div>
-
-        <div class="mobile-nav">
-
-          <button class="nav-close-btn">
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-          <div class="wrapper">
-
-            <p class="h3 nav-title">Main Menu</p>
-
-            <ul>
-              <li class="nav-item">
+          <div class="flex-wrapper">
+            <ul class="desktop-nav">
+              <li>
                 <a href="index.html" class="nav-link">Home</a>
               </li>
 
-              <li class="nav-item">
+              <li>
                 <a href="#" class="nav-link">About Me</a>
               </li>
 
-              <li class="nav-item">
+              <li>
                 <a href="#" class="nav-link">Contact</a>
               </li>
             </ul>
 
+            <button class="theme-btn theme-btn-desktop light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
           </div>
 
-          <div>
+          <div class="mobile-nav">
+            <button class="nav-close-btn">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
 
-            <p class="h3 nav-title">Topics</p>
+            <div class="wrapper">
+              <p class="h3 nav-title">Main Menu</p>
+
+              <ul>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About Me</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="h3 nav-title">Topics</p>
+
+              <ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Database</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Accessibility</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Web Performance</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <header>
+        <h1>Accessibility Tips for Web Developers</h1>
+      </header>
+
+      <article>
+        <img src="assets/images/blog-3.png" alt="Accessibility" />
+        <h2>Introduction</h2>
+        <p>
+          Web accessibility is a crucial aspect of modern web development.
+          Ensuring that websites are accessible to users of all abilities is not
+          only a legal requirement in many places but also a moral imperative.
+          Web developers play a pivotal role in creating an inclusive online
+          environment. In this article, we'll explore key accessibility tips
+          that can help web developers build websites that are usable by
+          everyone.
+        </p>
+
+        <!-- More content about MongoDB can be added here -->
+
+        <h2>Semantic HTML: The Foundation of Accessibility</h2>
+        <img src="assets/images/access_schemaHTML.jpeg" alt="schemaLogo" />
+        <p>
+          Use semantic HTML tags appropriately to convey the structure of your
+          content. Properly structured documents make it easier for assistive
+          technologies like screen readers to interpret and present information
+          to users with disabilities. For instance, use headings
+          <strong>(h1, h2, h3, etc.)</strong> to organize content
+          hierarchically, and use lists <strong>(ul, ol)</strong> to structure
+          information logically.
+        </p>
+
+        <p>
+          <strong>Semantic HTML:</strong> The resource introduces the concept of
+          semantic HTML, explaining that it involves using HTML tags that carry
+          meaning about the structure and content of the page.
+        </p>
+
+        <p>
+          <strong>Accessibility Importance:</strong> The primary focus is on the
+          role of semantic HTML in enhancing accessibility. It highlights that
+          semantic markup improves the experience for users with disabilities,
+          including those who use screen readers or other assistive
+          technologies.
+        </p>
+
+        <p>
+          <strong>Screen Reader Compatibility:</strong> Semantic HTML elements
+          provide meaningful information to screen readers, enabling users with
+          visual impairments to better understand the content and navigate the
+          webpage.
+        </p>
+
+        <p>
+          <strong>Document Outline:</strong> Semantic tags contribute to a clear
+          document outline, helping all users, including those without
+          disabilities, to comprehend the structure of the content easily.
+        </p>
+
+        <p>
+          <strong>SEO Benefits:</strong> The resource may discuss how search
+          engines use semantic HTML to better understand and index the content,
+          potentially improving the website's search engine optimization (SEO).
+        </p>
+
+        <p>
+          <strong>Common Semantic Elements:</strong> It may highlight specific
+          HTML tags that are considered semantic, such as
+          <strong
+            ><'article'>, <'section'>, <'nav'>, <'header'>, <'footer'></strong
+          >
+          and others. These tags convey meaning about the purpose of the
+          enclosed content.
+        </p>
+
+        <h2>Descriptive and Meaningful Content: Alt Text for Images</h2>
+        <img src="assets/images/access-altimage.png" alt="ImgLogo" />
+        <p>
+          Provide descriptive and meaningful alternative text for images using
+          the alt attribute. Screen readers use this information to convey the
+          content and purpose of images to users with visual impairments. Avoid
+          generic or redundant alt text and strive to communicate the essential
+          information the image conveys. Here's an example of an
+          <strong>HTML image tag with alt text:</strong>
+          <img
+            src="/assets/images/imgTag.png"
+            alt="A red apple on a wooden table"
+            id="imgTag"
+          />
+          In this example, the alt text
+          <strong>"A red apple on a wooden table"</strong> provides a
+          description of the image. It's important to note that decorative
+          images, which don't convey meaningful content, can have empty alt
+          attributes (alt="") to indicate they are purely decorative and should
+          be ignored by screen readers. This helps avoid unnecessary information
+          for users relying on assistive technologies.
+        </p>
+
+        <!-- Information about MongoDB and Node.js integration can be added here -->
+
+        <h2>Color Contrast: Readable Text for Everyone</h2>
+        <img src="assets/images/acess_contrast.png" alt="Contrast-Logo" />
+        <p>
+          Maintain sufficient color contrast between text and its background to
+          ensure readability for users with low vision or color blindness. Use
+          tools like WebAIM's Contrast Checker to verify that your color choices
+          meet accessibility standards, such as the WCAG (Web Content
+          Accessibility Guidelines).
+        </p>
+        <h2>Focus Styles: Highlighting Interactive Elements</h2>
+        <img src="assets/images/access_focusstyle.png" alt="focusStyle" />
+        <p>
+          Ensure that interactive elements, such as links and form controls,
+          have a visible and clear focus indicator. This helps users who
+          navigate using a keyboard or other assistive technologies to
+          understand which element is currently active. Customize focus styles
+          to make them distinct but not distracting.
+          <img src="assets/images/focus.png" alt="focus-img" id="imgTag" />
+        </p>
+        <h2>Forms: Create Accessible Input Fields and Labels</h2>
+        <img src="assets/images/acess_inputlabel.jpeg" alt="inputLabel" />
+        <p>
+          Use proper form markup with associated labels to make forms
+          accessible. This benefits users who rely on screen readers and other
+          assistive technologies to navigate and complete online forms.
+          Additionally, provide clear instructions and error messages.
+          <img
+            src="assets/images/inputLabel.png"
+            alt="inputLabel-img"
+            id="imgTag"
+          />
+        </p>
+        <h2>Responsive Design: Accessibility Across Devices</h2>
+        <img
+          src="assets/images/access_resAllDevices.png"
+          alt="resAllDevices"
+          id="imgTag"
+        />
+        <> Create responsive designs that work seamlessly across various devices
+        and screen sizes. A responsive design not only enhances the user
+        experience but also ensures that your website is accessible to users
+        with disabilities who may be using different devices to browse the web.
+        The goal is to ensure a seamless and consistent user experience across
+        different devices, including desktops, laptops, tablets, and
+        smartphones. Accessibility is a crucial aspect of responsive design, as
+        it aims to make digital content usable and accessible to people with
+        disabilities.
+        <img
+          src="assets/images/access_resAllDevices2.png"
+          alt="resAllDevices"
+          id="imgTag"
+        />
+
+        <p>
+          In summary, responsive design is about creating flexible and adaptive
+          layouts, and accessibility is about ensuring that these layouts are
+          usable by everyone, including those with disabilities. Combining these
+          principles results in a web experience that is inclusive and performs
+          well across a diverse range of devices and user scenarios.
+        </p>
+        <h2>Conclusion:</h2>
+        <p>
+          In conclusion, fostering accessibility in web development is not just
+          a best practice; it's a fundamental responsibility. The digital
+          landscape is diverse, and users bring a wide range of abilities and
+          disabilities to the online experience. As web developers, our role
+          extends beyond mere functionality and aesthetics; it encompasses
+          creating an inclusive space where everyone can participate.
+        </p>
+
+        <p>
+          Prioritizing accessibility in web development is a commitment to
+          inclusivity and a positive user experience for everyone. By
+          implementing these accessibility tips, web developers can contribute
+          to a more accessible digital landscape where users of all abilities
+          can navigate, interact, and engage with online content. Remember,
+          accessibility is not just a checklist; it's an ongoing process of
+          improvement and consideration for the diverse needs of users.
+        </p>
+        <img
+          src="assets/images/access-conclu.jpeg"
+          alt="conclusion"
+          id="imgTag"
+        />
+
+        <p>
+          Implementing semantic HTML, providing meaningful alt text, ensuring
+          keyboard navigation, maintaining color contrast, and focusing on
+          responsive design are not just checkboxes—they are the building blocks
+          of an accessible web. By incorporating these practices, we not only
+          adhere to legal requirements but also contribute to a more
+          compassionate and user-friendly internet.Remember, accessibility is an
+          ongoing commitment. Regular testing, user feedback, and staying
+          informed about evolving standards such as WCAG are essential. Every
+          improvement made to enhance accessibility is a step towards a digital
+          world that values diversity and empowers users, regardless of their
+          abilities.In the ever-evolving field of web development, let's
+          continue to champion inclusivity, break down digital barriers, and
+          ensure that the online experience is truly for everyone. It's not just
+          about writing code; it's about creating connections, fostering
+          understanding, and making the internet a space where everyone is
+          welcome.
+        </p>
+      </article>
+
+      <footer>
+        <div class="container">
+          <div class="wrapper">
+            <a href="index.html" class="footer-logo">
+              <img
+                src="./assets/images/logo-light.svg"
+                alt="DevBlog's Logo"
+                width="150"
+                height="40"
+                class="logo-light"
+              />
+              <img
+                src="./assets/images/logo-dark.svg"
+                alt="DevBlog's Logo"
+                width="150"
+                height="40"
+                class="logo-dark"
+              />
+            </a>
+
+            <p class="footer-text">
+              Learn about Web accessibility, Web performance, and Database
+              management.
+            </p>
+          </div>
+
+          <div class="wrapper">
+            <p class="footer-title">Quick Links</p>
 
             <ul>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Database</a>
+              <li>
+                <a href="#" class="footer-link">Advertise with us</a>
               </li>
 
-              <li class="nav-item">
-                <a href="#" class="nav-link">Accessibility</a>
+              <li>
+                <a href="#" class="footer-link">About Us</a>
               </li>
 
-              <li class="nav-item">
-                <a href="#" class="nav-link">Web Performance</a>
+              <li>
+                <a href="#" class="footer-link">Contact Us</a>
               </li>
             </ul>
-
           </div>
 
-        </div>
-
-      </nav>
-
-    </div>
-<header>
-    <h1>Accessibility Tips for Web Developers</h1>
-</header>
-
-<article>
-    <img src="assets/images/blog-3.png" alt="Accessibility">
-      <h2>Introduction</h2>
-          <p>
-            Web accessibility is a crucial aspect of modern web development. Ensuring that websites are accessible to users of all abilities is not only a legal requirement in many places but also a moral imperative. Web developers play a pivotal role in creating an inclusive online environment. In this article, we'll explore key accessibility tips that can help web developers build websites that are usable by everyone.
-          </p>
-
-      <!-- More content about MongoDB can be added here -->
-
-      <h2>Semantic HTML: The Foundation of Accessibility</h2>
-        <img src="assets/images/access_schemaHTML.jpeg" alt="schemaLogo">
-          <p>
-            Use semantic HTML tags appropriately to convey the structure of your content. Properly structured documents make it easier for assistive technologies like screen readers to interpret and present information to users with disabilities. For instance, use headings <strong>(h1, h2, h3, etc.)</strong> to organize content hierarchically, and use lists <strong>(ul, ol)</strong> to structure information logically.
-          </p>
-          
-          <p><strong>Semantic HTML:</strong>
-            The resource introduces the concept of semantic HTML, explaining that it involves using HTML tags that carry meaning about the structure and content of the page.</p>
-          
-            <p><strong>Accessibility Importance:</strong>
-          The primary focus is on the role of semantic HTML in enhancing accessibility. It highlights that semantic markup improves the experience for users with disabilities, including those who use screen readers or other assistive technologies.</p>
-          
-          <p><strong>Screen Reader Compatibility:</strong>
-          Semantic HTML elements provide meaningful information to screen readers, enabling users with visual impairments to better understand the content and navigate the webpage.</p>
-          
-          <p><strong>Document Outline:</strong>
-          Semantic tags contribute to a clear document outline, helping all users, including those without disabilities, to comprehend the structure of the content easily.</p>
-          
-          <p><strong>SEO Benefits:</strong>
-          The resource may discuss how search engines use semantic HTML to better understand and index the content, potentially improving the website's search engine optimization (SEO).</p>
-          
-          <p><strong>Common Semantic Elements:</strong>
-          It may highlight specific HTML tags that are considered semantic, such as <strong><'article'>, <'section'>, <'nav'>, <'header'>, <'footer'></strong> and others. These tags convey meaning about the purpose of the enclosed content.
-          </p>
-
-
-
-      <h2>Descriptive and Meaningful Content: Alt Text for Images</h2>
-        <img src="assets/images/access-altimage.png" alt="ImgLogo">
-          <p>
-              Provide descriptive and meaningful alternative text for images using the alt attribute. Screen readers use this information to convey the content and purpose of images to users with visual impairments. Avoid generic or redundant alt text and strive to communicate the essential information the image conveys.
-
-              Here's an example of an <strong>HTML image tag with alt text:</strong>
-              <img src="/assets/images/imgTag.png" alt="A red apple on a wooden table" id="imgTag">
-              In this example, the alt text <strong>"A red apple on a wooden table"</strong> provides a description of the image. It's important to note that decorative images, which don't convey meaningful content, can have empty alt attributes (alt="") to indicate they are purely decorative and should be ignored by screen readers. This helps avoid unnecessary information for users relying on assistive technologies.
-          </p>
-
-      <!-- Information about MongoDB and Node.js integration can be added here -->
-
-      <h2>Color Contrast: Readable Text for Everyone</h2>
-        <img src="assets/images/acess_contrast.png" alt="Contrast-Logo">
-          <p>
-            Maintain sufficient color contrast between text and its background to ensure readability for users with low vision or color blindness. Use tools like WebAIM's Contrast Checker to verify that your color choices meet accessibility standards, such as the WCAG (Web Content Accessibility Guidelines).
-          </p>
-      <h2>Focus Styles: Highlighting Interactive Elements</h2>
-        <img src="assets/images/access_focusstyle.png" alt="focusStyle">
-          <p>
-            Ensure that interactive elements, such as links and form controls, have a visible and clear focus indicator. This helps users who navigate using a keyboard or other assistive technologies to understand which element is currently active. Customize focus styles to make them distinct but not distracting.
-            <img src="assets/images/focus.png" alt="focus-img" id="imgTag">
-          </p>
-      <h2>Forms: Create Accessible Input Fields and Labels</h2>
-        <img src="assets/images/acess_inputlabel.jpeg" alt="inputLabel">
-          <p>
-            Use proper form markup with associated labels to make forms accessible. 
-            This benefits users who rely on screen readers and other assistive technologies to navigate and complete online forms. Additionally, provide clear instructions and error messages.
-            <img src="assets/images/inputLabel.png" alt="inputLabel-img" id="imgTag">
-          </p>
-      <h2>Responsive Design: Accessibility Across Devices</h2>
-        <img src="assets/images/access_resAllDevices.png" alt="resAllDevices" id="imgTag">
-          <p>
-            Create responsive designs that work seamlessly across various devices and screen sizes. A responsive design not only enhances the user experience but also ensures that your website is accessible to users with disabilities who may be using different devices to browse the web. The goal is to ensure a seamless and consistent user experience across different devices, including desktops, laptops, tablets, and smartphones. Accessibility is a crucial aspect of responsive design, as it aims to make digital content usable and accessible to people with disabilities.
-            <img src="assets/images/access_resAllDevices2.png" alt="resAllDevices" id="imgTag">
-
-            <p>In summary, responsive design is about creating flexible and adaptive layouts, and accessibility is about ensuring that these layouts are usable by everyone, including those with disabilities. Combining these principles results in a web experience that is inclusive and performs well across a diverse range of devices and user scenarios.</p>
-          </p>
-      <h2>Conclusion:</h2>
-          <p>
-            In conclusion, fostering accessibility in web development is not just a best practice; it's a fundamental responsibility. The digital landscape is diverse, and users bring a wide range of abilities and disabilities to the online experience. As web developers, our role extends beyond mere functionality and aesthetics; it encompasses creating an inclusive space where everyone can participate.
-            
-            <p>Prioritizing accessibility in web development is a commitment to inclusivity and a positive user experience for everyone. By implementing these accessibility tips, web developers can contribute to a more accessible digital landscape where users of all abilities can navigate, interact, and engage with online content. Remember, accessibility is not just a checklist; it's an ongoing process of improvement and consideration for the diverse needs of users.</p>
-            <img src="assets/images/access-conclu.jpeg" alt="conclusion" id="imgTag">
-            
-            <p>Implementing semantic HTML, providing meaningful alt text, ensuring keyboard navigation, maintaining color contrast, and focusing on responsive design are not just checkboxes—they are the building blocks of an accessible web. By incorporating these practices, we not only adhere to legal requirements but also contribute to a more compassionate and user-friendly internet.Remember, accessibility is an ongoing commitment. Regular testing, user feedback, and staying informed about evolving standards such as WCAG are essential. Every improvement made to enhance accessibility is a step towards a digital world that values diversity and empowers users, regardless of their abilities.In the ever-evolving field of web development, let's continue to champion inclusivity, break down digital barriers, and ensure that the online experience is truly for everyone. It's not just about writing code; it's about creating connections, fostering understanding, and making the internet a space where everyone is welcome.</p>
-          </p>
-</article>
-
-    <footer>
-
-        <div class="container">
-    
           <div class="wrapper">
-    
-            <a href="index.html" class="footer-logo">
-              <img src="./assets/images/logo-light.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-light">
-              <img src="./assets/images/logo-dark.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-dark">
-            </a>
-    
-            <p class="footer-text">
-              Learn about Web accessibility, Web performance, and Database management.
-            </p>
-    
-          </div>
-    
-          <div class="wrapper">
-    
-            <p class="footer-title">Quick Links</p>
-    
-              <ul>
-      
-                <li>
-                  <a href="#" class="footer-link">Advertise with us</a>
-                </li>
-      
-                <li>
-                  <a href="#" class="footer-link">About Us</a>
-                </li>
-      
-                <li>
-                  <a href="#" class="footer-link">Contact Us</a>
-                </li>
-      
-              </ul>
-    
-          </div>
-    
-          <div class="wrapper">
-    
             <p class="footer-title">Legal Stuff</p>
-    
-              <ul>
-      
-                <li>
-                  <a href="#" class="footer-link">Privacy Notice</a>
-                </li>
-      
-                <li>
-                  <a href="#" class="footer-link">Cookie Policy</a>
-                </li>
-      
-                <li>
-                  <a href="#" class="footer-link">Terms Of Use</a>
-                </li>
-      
-              </ul>
-    
+
+            <ul>
+              <li>
+                <a href="#" class="footer-link">Privacy Notice</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Cookie Policy</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Terms Of Use</a>
+              </li>
+            </ul>
           </div>
-    
         </div>
-    
+
         <p class="copyright">
           &copy; Copyright 2023 <a href="index.html">ninvitou</a>
         </p>
-    
-    </footer>
+      </footer>
 
       <script src="./assets/js/script.min.js"></script>
       <!--
         - ionicon link
       -->
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+    </header>
+  </body>
 </html>
