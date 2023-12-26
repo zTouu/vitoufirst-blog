@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My MongoDB Article</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/stylee.css">
   <!--
     - favicon
    -->
@@ -13,7 +14,6 @@
   <!--
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.min.css">
 
   <!--
     - google font link
@@ -34,7 +34,7 @@
 
       <nav class="navbar">
 
-        <a href="#">
+        <a href="index.html">
           <img src="./assets/images/logo-light.svg" alt="Devblog's logo" width="150" height="40" class="logo-light">
           <img src="./assets/images/logo-dark.svg" alt="Devblog's logo" width="150" height="40" class="logo-dark">
        </a>
@@ -130,117 +130,63 @@
     </div>
 
 
-  <!-- This is css -->
-  <style>
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #e0f7fa;
-    }
-    article {
-        max-width: 800px;
-        margin: 0 auto;
-        background-color: transparent;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-
-    h1, h2, h3 {
-        font-family: 'Open Sans', sans-serif;
-    }
-    h1 {
-        font-weight: 600;
-        text-align: center;
-        padding-bottom: 30px;
-    }
-    h2{
-        padding: 20px 20px;
-        font-weight: 400;
-    }
-    h1, h2{
-        color: var(--foreground-primary);
-    }
-    p{
-        color: var(--foreground-primary);
-    }
-    strong{
-        color: var(--foreground-primary);
-    }
-</style>
-
-
-
-
 <header>
     <h1>MongoDB Article</h1>
 </header>
 
 <article>
-    
-    <img src="assets/images/blog-1.png" alt="MongoDB Logo" width="550">
+    <img src="assets/images/blog-1.png" alt="MongoDB Logo" >
 
-    <h2>Introduction to MongoDB</h2>
-    <img src="assets/images/intro.png" alt="MongoDB logo" width="500">
-    <p>
-        MongoDB is a popular open-source NoSQL database that provides high performance, high availability, and easy scalability. Unlike traditional relational databases, MongoDB stores data in a flexible, JSON-like format called BSON. This allows for a dynamic and schema-less data model, making it well-suited for modern, agile development.
+      <h2>Introduction to MongoDB</h2>
+        <img src="assets/images/intro.png" alt="MongoDB logo" >
+          <p>
+              MongoDB is a popular open-source NoSQL database that provides high performance, high availability, and easy scalability. Unlike traditional relational databases, MongoDB stores data in a flexible, JSON-like format called BSON. This allows for a dynamic and schema-less data model, making it well-suited for modern, agile development.MongoDB adopts a document-oriented approach, storing data in BSON (Binary JSON) format. BSON is a binary representation of JSON-like documents, enabling a rich and nested data structure. Each document in MongoDB is a collection of key-value pairs, akin to a JSON object, and can be further nested or extended without adhering to a fixed schema.
+          </p>
 
-MongoDB adopts a document-oriented approach, storing data in BSON (Binary JSON) format. BSON is a binary representation of JSON-like documents, enabling a rich and nested data structure. Each document in MongoDB is a collection of key-value pairs, akin to a JSON object, and can be further nested or extended without adhering to a fixed schema.
-</p>
+      <!-- More content about MongoDB can be added here -->
 
-    <!-- More content about MongoDB can be added here -->
+      <h2>Getting Started with MongoDB</h2>
 
-    <h2>Getting Started with MongoDB</h2>
+        <img src="assets/images/getstart.jpeg" alt="MongoDB logo" >
+          <p>
+            To get started with MongoDB, you'll need to download and install the MongoDB server. You can then interact with MongoDB using the MongoDB Shell or various programming language drivers.
+          </p>
 
-    <img src="assets/images/getstart.jpeg" alt="MongoDB logo" width="500">
-    <p>
-        To get started with MongoDB, you'll need to download and install the MongoDB server. You can then interact with MongoDB using the MongoDB Shell or various programming language drivers.</p>
+          <p> <strong>1. Installation:</strong>
 
-<p> <strong>1. Installation:</strong> 
-
-Visit the official MongoDB website (https://www.mongodb.com/try/download/community) to download the appropriate version for your operating system.
-Follow the installation instructions provided for your platform.</p> 
-
-
-<p><strong>2. Starting MongoDB:</strong> Once installed, start the MongoDB server. For most installations, this involves running a command like mongod in your terminal or command prompt.</p>
-<strong>3. Connect to MongoDB:</strong>
-
-<p>Open a new terminal or command prompt window and run the mongo shell command. This connects you to the MongoDB server.</p>
+          Visit the official MongoDB website (https://www.mongodb.com/try/download/community) to download the appropriate version for your operating system.
+          Follow the installation instructions provided for your platform.
+          </p>
 
 
-<p> <strong>4. Create a Database:</strong>In the mongo shell, you can create a new database using the use command. For example: use mydatabase. If the database doesn't exist, MongoDB will create it.</p>
-<strong>5. Create Collections:</strong>
+          <p><strong>2. Starting MongoDB:</strong> Once installed, start the MongoDB server. For most installations, this involves running a command like mongod in your terminal or command prompt.</p>
+          <p><strong>3. Connect to MongoDB:</strong>
+          Open a new terminal or command prompt window and run the mongo shell command. This connects you to the MongoDB server.</p>
 
-<p>Collections are akin to tables in relational databases. You can create a collection within your database using the db.createCollection() command. For example: db.createCollection('mycollection').</p>
+          <p><strong>4. Create a Database:</strong>In the mongo shell, you can create a new database using the use command. For example: use mydatabase. If the database doesn't exist, MongoDB will create it.
+          </p>
+          <p><strong>5. Create Collections:</strong>
+          Collections are akin to tables in relational databases. You can create a collection within your database using the db.createCollection() command. For example: db.createCollection('mycollection').</p>
 
-    <!-- More details about getting started can be added here -->
+      <!-- More details about getting started can be added here -->
 
-    <h2>MongoDB and Node.js</h2>
-    <img src="assets/images/mongo-nodejs.png" alt="MongoDB Logo" width="550">
-    <p>
-        MongoDB is commonly used in modern web applications, big data, real-time applications, and other scenarios where flexibility, scalability, and performance are crucial. Its flexibility and ease of use make it a popular choice for developers working with diverse and rapidly changing data structures.
-        
-        If you're working with JavaScript, especially in a Node.js environment, you can use the official MongoDB Node.js driver to interact with MongoDB. This allows you to seamlessly integrate MongoDB into your Node.js applications.
-    </p>
+      <h2>MongoDB and Node.js</h2>
+        <img src="assets/images/mongo-nodejs.png" alt="MongoDB Logo" >
+          <p>
+              MongoDB is commonly used in modern web applications, big data, real-time applications, and other scenarios where flexibility, scalability, and performance are crucial. Its flexibility and ease of use make it a popular choice for developers working with diverse and rapidly changing data structures.
 
-    <!-- Information about MongoDB and Node.js integration can be added here -->
+              If you're working with JavaScript, especially in a Node.js environment, you can use the official MongoDB Node.js driver to interact with MongoDB. This allows you to seamlessly integrate MongoDB into your Node.js applications.
+          </p>
 
-    <h2>Conclusion</h2>
-    <img src="assets/images/conclu.jpeg" alt="MongoDB Logo" width="550">
-    <p>
-        MongoDB is a powerful and flexible database solution that has gained widespread adoption in the developer community. Whether you're building a small application or a large-scale system, MongoDB's document-oriented approach and scalability make it a valuable choice for various use cases. 
+      <!-- Information about MongoDB and Node.js integration can be added here -->
 
-        As technology continues to advance, MongoDB remains at the forefront of the NoSQL database landscape, evolving to meet the demands of modern applications. Its commitment to innovation, adaptability, and community-driven development positions MongoDB as a leading choice for developers navigating the complexities of contemporary data management. Whether tackling large-scale projects or nimble, dynamic endeavors, MongoDB continues to prove its value as a powerful and flexible database solution.
-    </p>
+      <h2>Conclusion</h2>
+        <img src="assets/images/conclu.jpeg" alt="MongoDB Logo" >
+          <p>
+              MongoDB is a powerful and flexible database solution that has gained widespread adoption in the developer community. Whether you're building a small application or a large-scale system, MongoDB's document-oriented approach and scalability make it a valuable choice for various use cases. 
+
+              As technology continues to advance, MongoDB remains at the forefront of the NoSQL database landscape, evolving to meet the demands of modern applications. Its commitment to innovation, adaptability, and community-driven development positions MongoDB as a leading choice for developers navigating the complexities of contemporary data management. Whether tackling large-scale projects or nimble, dynamic endeavors, MongoDB continues to prove its value as a powerful and flexible database solution.
+          </p>
 </article>
 
     <footer>
@@ -249,7 +195,7 @@ Follow the installation instructions provided for your platform.</p>
     
           <div class="wrapper">
     
-            <a href="#" class="footer-logo">
+            <a href="index.html" class="footer-logo">
               <img src="./assets/images/logo-light.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-light">
               <img src="./assets/images/logo-dark.svg" alt="DevBlog's Logo" width="150" height="40" class="logo-dark">
             </a>
@@ -264,21 +210,21 @@ Follow the installation instructions provided for your platform.</p>
     
             <p class="footer-title">Quick Links</p>
     
-            <ul>
-    
-              <li>
-                <a href="#" class="footer-link">Advertise with us</a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">About Us</a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">Contact Us</a>
-              </li>
-    
-            </ul>
+              <ul>
+      
+                <li>
+                  <a href="#" class="footer-link">Advertise with us</a>
+                </li>
+      
+                <li>
+                  <a href="#" class="footer-link">About Us</a>
+                </li>
+      
+                <li>
+                  <a href="#" class="footer-link">Contact Us</a>
+                </li>
+      
+              </ul>
     
           </div>
     
@@ -286,28 +232,28 @@ Follow the installation instructions provided for your platform.</p>
     
             <p class="footer-title">Legal Stuff</p>
     
-            <ul>
-    
-              <li>
-                <a href="#" class="footer-link">Privacy Notice</a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">Cookie Policy</a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">Terms Of Use</a>
-              </li>
-    
-            </ul>
+              <ul>
+      
+                <li>
+                  <a href="#" class="footer-link">Privacy Notice</a>
+                </li>
+      
+                <li>
+                  <a href="#" class="footer-link">Cookie Policy</a>
+                </li>
+      
+                <li>
+                  <a href="#" class="footer-link">Terms Of Use</a>
+                </li>
+      
+              </ul>
     
           </div>
     
         </div>
     
         <p class="copyright">
-          &copy; Copyright 2023 <a href="#">ninvitou</a>
+          &copy; Copyright 2023 <a href="index.html">ninvitou</a>
         </p>
     
     </footer>
