@@ -58,6 +58,23 @@ p{
 strong{
     color: var(--foreground-primary);
 }
+.under{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ok {
+    margin-top: 56px;
+    background: var(--background-primary);
+    padding: 20px;
+    overflow-x: auto;
+    font-family: source-code-pro, Menlo, Monaco, "Courier New", Courier, monospace;
+    color: var(--foreground-primary);
+    border: none;
+}
+
+
+
+
 footer .container {
     padding: var(--py) 15px;
     display: grid;

@@ -112,5 +112,3 @@ function footer(){
 }
 
 document.body.insertAdjacentHTML('beforeend',footer());
-
-//function div(){
