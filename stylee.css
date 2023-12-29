@@ -63,7 +63,6 @@ strong{
     cursor: pointer;
 }
 .ok {
-    width: min-content;
     margin-top: 56px;
     background: var(--background-primary);
     padding: 20px;
