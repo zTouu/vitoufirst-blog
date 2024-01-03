@@ -986,12 +986,13 @@ footer .wrapper { text-align: center; }
     color: var(--action-primary);
   }
 
-  .contact { margin-bottom: 3rem; }
+  #contact { margin-bottom: 3rem; }
 
-  .contact p {
+  #contact p {
     color: var(--foreground-secondary);
     margin-bottom: 1rem;
   }
+  
 
   .social-link {
     display:         flex;

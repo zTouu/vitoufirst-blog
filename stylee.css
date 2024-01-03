@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa;
+    background-color: var(--background-primary);
 }
 article {
     max-width: 950px;
@@ -28,7 +28,7 @@ img {
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .bg{
     width: 100%;
